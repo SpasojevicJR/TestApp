@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.testapp.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/productDetailsActivity"
+        android:name="com.example.testapp.ProductDetailsActivity"
+        android:label="ProductDetailsActivity" />
+    <action
+        android:id="@+id/action_global_productDetailsActivity"
+        app:destination="@id/productDetailsActivity"
+        app:popUpTo="@id/nav_graph" />
+</navigation>
